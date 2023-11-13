@@ -1,0 +1,121 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+y = np.array([55.32, 44.68])
+mylabels = ["Employment rate", "Unemployment rate"]
+mycolors = ["darkcyan", "orange"]
+
+plt.subplot(3, 2, 1)
+plt.pie(y, labels=mylabels, colors=mycolors)
+plt.title("Labour survey 2022 in RWANDA")
+
+
+x5 = np.array(["Kicukiro",
+"Gasabo",
+"Nyarugenge"
+])
+y5 = np.array([68.9,
+66.8,
+66.2
+])
+
+plt.subplot(3, 2, 6)
+plt.barh(x5, y5, color="darkcyan")
+plt.title("kigali city")
+
+
+x1 = np.array(["Musanze",
+"Burera",
+"Gicumbi",
+"Rulindo",
+"Gakenke"])
+y1 = np.array([60.6,
+59.2,
+54.8,
+54.6,
+51.8,])
+
+plt.subplot(3, 2, 2)
+plt.barh(x1, y1,color="darkcyan")
+plt.title("northern province")
+
+
+x2 = np.array(["Huye",
+"Muhanga",
+"Gisagara",
+"Nyamagabe",
+"Kamonyi",
+"Ruhango",
+"Nyanza",
+"Nyaruguru"
+
+])
+y2 = np.array([
+    57.7,
+55.4,
+54.0,
+52.3,
+51.8,
+51.3,
+49.4,
+43.8
+
+])
+
+plt.subplot(3, 2, 3)
+plt.barh(x2, y2,color="darkcyan")
+plt.title("sourthern province")
+
+
+x3 = np.array(["Rubavu",
+"Nyabihu",
+"Ngororero",
+"Rutsiro",
+"Karongi",
+"Rusizi",
+"Nyamasheke"
+])
+y3 = np.array([60.9,
+58.4,
+56.5,
+55.3,
+51.2,
+50.4,
+45.4
+])
+
+plt.subplot(3, 2, 4)
+plt.barh(x3, y3,color="darkcyan")
+plt.title("western province")
+
+
+x4 = np.array(["Gatsibo",
+"Ngoma",
+"Bugesera",
+"Rwamagana",
+"Nyagatare",
+"Kirehe",
+"Kayonza"
+])
+y4 = np.array([60.0,
+59.1,
+54.2,
+54.0,
+53.2,
+52.8,
+49.6
+])
+
+plt.subplot(3, 2, 5)
+plt.barh(x4, y4, color="darkcyan")
+plt.title("eastern province")
+
+
+
+
+
+plt.tight_layout()
+
+
+plt.show()
